@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="DEMO"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Para poder utilizar la aplicación se requiere descargar la información"
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="NOTA: La información descargada sobrescribirá la información almacenada localmente"
+        android:textSize="14sp"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/download_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_oval"
+        android:textColor="@color/white"
+        android:layout_margin="40dp"
+        android:text="Descargar Información"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:visibility="invisible"/>
+
+</LinearLayout>
